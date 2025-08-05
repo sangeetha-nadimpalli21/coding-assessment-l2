@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bundle-builder">
+        <header class="bundle-header">
+            <h1>Buy 3 and Save 30%</h1>
+        </header>
+
+        <main class="bundle-content">
+            <section class="product-grid" id="product-grid">
+                </section>
+
+            <aside class="bundle-sidebar">
+                <div class="sidebar-header">
+                    <h2>Create a Bundle</h2>
+                    <p class="sidebar-instruction">Add at least 3 products and Save 30%</p>
+                </div>
+
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <p class="progress-text" id="progressText">0/3 items added</p>
+
+                <div class="selected-products-list" id="selectedProductsList">
+                    </div>
+
+                <div class="bundle-summary">
+                    <div class="subtotal-item">
+                        <span>Subtotal</span>
+                        <span id="subtotalPrice">$0.00</span>
+                    </div>
+                    <div class="discount-item hidden" id="discountItem">
+                        <span>30% Bundle Discount</span>
+                        <span id="discountPrice">-$0.00</span>
+                    </div>
+                    <div class="final-total">
+                        <span>Final Total</span>
+                        <span id="finalTotalPrice">$0.00</span>
+                    </div>
+                </div>
+
+                <button class="cta-button" id="addToCartButton" disabled>
+                    Add to Cart
+                </button>
+            </aside>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
